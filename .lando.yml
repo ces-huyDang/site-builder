@@ -1,0 +1,4 @@
+name: site-builder
+recipe: drupal10
+config:
+  webroot: web
