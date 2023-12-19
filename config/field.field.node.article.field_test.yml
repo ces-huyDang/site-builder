@@ -1,0 +1,21 @@
+uuid: 20df03fe-3099-4c7d-ac50-bd64bca0d74d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test
+    - node.type.article
+  module:
+    - fontawesome
+id: node.article.field_test
+field_name: field_test
+entity_type: node
+bundle: article
+label: Test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

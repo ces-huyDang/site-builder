@@ -1,0 +1,23 @@
+uuid: 51f0b8ca-9a79-4704-bb25-4420285bff35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chap_number
+    - paragraphs.paragraphs_type.latest_chap
+id: paragraph.latest_chap.field_chap_number
+field_name: field_chap_number
+entity_type: paragraph
+bundle: latest_chap
+label: 'Chap Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

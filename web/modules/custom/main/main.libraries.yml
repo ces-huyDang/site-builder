@@ -1,0 +1,10 @@
+# Custom library for general purposes.
+example_1:
+  js:
+    js/example-1.js: {}
+  css:
+    component:
+      css/example-1.css: {}
+  dependencies:
+    - core/drupalSettings
+    - core/jquery

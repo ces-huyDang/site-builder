@@ -1,0 +1,20 @@
+uuid: 5f9dd886-a7d1-4e34-a376-a69529f6e61f
+langcode: en
+status: true
+dependencies:
+  module:
+    - main
+  theme:
+    - manga
+id: manga_richcontentmenublock
+theme: manga
+region: header
+weight: -3
+provider: null
+plugin: rich_content_menu_block
+settings:
+  id: rich_content_menu_block
+  label: 'Rich Content Menu Block'
+  label_display: '0'
+  provider: main
+visibility: {  }

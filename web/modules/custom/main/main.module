@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Main module.
+ */
+
+/**
+ * Implements hook_theme() for main pages.
+ */
+function main_theme() {
+  return [
+    'rich_content_menu' => [
+      'template' => 'rich-content-menu',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

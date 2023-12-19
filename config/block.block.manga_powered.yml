@@ -1,0 +1,22 @@
+uuid: bf9a0fb5-78d7-44c3-98d4-ec31c6f10729
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - manga
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: manga_powered
+theme: manga
+region: footer
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

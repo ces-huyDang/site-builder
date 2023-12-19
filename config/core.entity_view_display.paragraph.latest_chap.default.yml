@@ -1,0 +1,42 @@
+uuid: 620a6aa9-f4a5-45ac-8064-99a12496f23b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_chap.field_chap_number
+    - field.field.paragraph.latest_chap.field_since
+    - paragraphs.paragraphs_type.latest_chap
+id: paragraph.latest_chap.default
+targetEntityType: paragraph
+bundle: latest_chap
+mode: default
+content:
+  field_chap_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_since:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

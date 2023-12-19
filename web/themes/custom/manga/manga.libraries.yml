@@ -1,0 +1,11 @@
+manga-styling:
+  js:
+    js/manga.js: {}
+  css:
+    base:
+      css/base/style.min.css: {}
+      css/base/bootstrap.min.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/popperjs

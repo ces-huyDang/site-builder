@@ -8,10 +8,12 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_test
     - image.style.wide
     - node.type.article
   module:
     - comment
+    - fontawesome
     - image
     - text
     - user
@@ -42,8 +44,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_style: wide
       image_link: ''
+      image_style: wide
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -56,6 +58,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 10
+    region: content
+  field_test:
+    type: fontawesome_icon_formatter
+    label: above
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 111
     region: content
   links:
     settings: {  }

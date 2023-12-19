@@ -1,0 +1,19 @@
+uuid: cd93fd93-20ce-4d40-9293-9ef1f771b2e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_since
+    - paragraphs.paragraphs_type.latest_chap
+id: paragraph.latest_chap.field_since
+field_name: field_since
+entity_type: paragraph
+bundle: latest_chap
+label: Since
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

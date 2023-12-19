@@ -2,3 +2,22 @@ name: site-builder
 recipe: drupal10
 config:
   webroot: web
+services:
+  appserver:
+    xdebug: true
+    config:
+      php: xdebug.ini
+  phpmyadmin:
+    type: phpmyadmin
+    overrides:
+      environment:
+        UPLOAD_LIMIT: 25600000
+    hosts:
+      - database
+tooling:
+  phpcs:
+    service: appserver
+    cmd: "php /app/vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml"
+  phpcbf:
+    service: appserver
+    cmd: "php /app/vendor/bin/phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml"    

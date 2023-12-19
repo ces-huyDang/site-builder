@@ -1,0 +1,26 @@
+uuid: cbc551d7-fe24-41cf-b12c-344d8c6b31f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.manga_overview.field_author
+    - field.field.node.manga_overview.field_cover_art
+    - field.field.node.manga_overview.field_latest_chap
+    - node.type.manga_overview
+  module:
+    - user
+id: node.manga_overview.teaser
+targetEntityType: node
+bundle: manga_overview
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_author: true
+  field_cover_art: true
+  field_latest_chap: true

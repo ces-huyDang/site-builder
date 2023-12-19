@@ -1,0 +1,20 @@
+name: Manga
+type: theme
+base theme: false
+description: Designed theme for manga site.
+package: Custom
+core_version_requirement: ^10
+libraries:
+  - manga/manga-styling
+regions:
+  header_left: 'Header left'
+  header: 'Header'
+  header_right: 'Header right'
+  primary_menu: 'Primary menu'
+  featured: 'Featured'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+dependencies:
+  - block
