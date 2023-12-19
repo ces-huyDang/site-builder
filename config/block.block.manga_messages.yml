@@ -1,0 +1,22 @@
+uuid: 14d56f35-633f-4c0f-b59c-5d08de52ddc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - manga
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: manga_messages
+theme: manga
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

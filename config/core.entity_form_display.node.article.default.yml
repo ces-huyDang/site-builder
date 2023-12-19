@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_test
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - fontawesome
     - image
     - path
     - text
@@ -60,6 +62,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_test:
+    type: fontawesome_icon_widget
+    weight: 121
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

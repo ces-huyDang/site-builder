@@ -1,0 +1,10 @@
+uuid: 9d1c79d6-dcdf-43da-a861-4ff9482a8025
+langcode: en
+status: true
+dependencies: {  }
+id: latest_chap
+label: 'Latest Chap'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

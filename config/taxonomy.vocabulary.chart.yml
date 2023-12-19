@@ -1,0 +1,8 @@
+uuid: 358205bc-abe5-4a36-9d22-71a3c9ce784d
+langcode: en
+status: true
+dependencies: {  }
+name: Chart
+vid: chart
+description: ''
+weight: 0

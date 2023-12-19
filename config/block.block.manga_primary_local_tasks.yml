@@ -1,0 +1,22 @@
+uuid: 7b3a67cd-7708-4e46-8ee5-341e8fa9cd61
+langcode: en
+status: true
+dependencies:
+  theme:
+    - manga
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: manga_primary_local_tasks
+theme: manga
+region: sidebar_first
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

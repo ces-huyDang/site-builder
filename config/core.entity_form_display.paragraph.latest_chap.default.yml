@@ -1,0 +1,29 @@
+uuid: a74d19e6-70f4-445a-9ffa-d68dd350b4d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_chap.field_chap_number
+    - field.field.paragraph.latest_chap.field_since
+    - paragraphs.paragraphs_type.latest_chap
+id: paragraph.latest_chap.default
+targetEntityType: paragraph
+bundle: latest_chap
+mode: default
+content:
+  field_chap_number:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_since:
+    type: datetime_timestamp
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

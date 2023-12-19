@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ */
+
+declare(strict_types = 1);
+
+/**
+ * @file
+ * Functions to support theming in the Manga theme.
+*/

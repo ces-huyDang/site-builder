@@ -1,0 +1,20 @@
+uuid: 6a35f9c5-22d7-4db0-8101-d25afe8893dd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - manga
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: manga_primary_admin_actions
+theme: manga
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: b215ab53-d045-41d4-a989-29ef2387489e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - filter.format.basic_html
+    - node.type.manga_overview
+  module:
+    - text
+id: node.manga_overview.field_author
+field_name: field_author
+entity_type: node
+bundle: manga_overview
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

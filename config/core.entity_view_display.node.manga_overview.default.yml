@@ -1,0 +1,49 @@
+uuid: da8ffed4-84bc-4f64-96b6-adfc4cfc07e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.manga_overview.field_author
+    - field.field.node.manga_overview.field_cover_art
+    - field.field.node.manga_overview.field_latest_chap
+    - node.type.manga_overview
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.manga_overview.default
+targetEntityType: node
+bundle: manga_overview
+mode: default
+content:
+  field_author:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_cover_art:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_latest_chap:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

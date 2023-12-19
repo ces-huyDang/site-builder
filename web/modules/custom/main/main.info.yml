@@ -1,0 +1,5 @@
+name: 'Main'
+type: module
+description: 'Site main module'
+package: Custom
+core_version_requirement: ^10

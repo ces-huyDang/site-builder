@@ -1,0 +1,8 @@
+attributes:
+  data-icon:
+    label: Icon
+    description: 'Replace the text of the menu link with an icon.'
+    options:
+      facebook: Facebook
+      instagram: Instagram
+      twitter: Twitter

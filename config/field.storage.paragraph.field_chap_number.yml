@@ -1,0 +1,20 @@
+uuid: f3336bc2-f1b9-45f6-8a2a-01788d86c110
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_chap_number
+field_name: field_chap_number
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
