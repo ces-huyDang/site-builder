@@ -1,0 +1,26 @@
+uuid: 8f2ecb19-7a4a-4e21-a93f-7b57bf150d7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - manga
+id: manga_searchform
+theme: manga
+region: sidebar_second
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/node/*"

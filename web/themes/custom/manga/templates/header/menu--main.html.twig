@@ -38,19 +38,25 @@
         {% endif %}
         {% set rich_menu_index = [1, 2] %}
         {% for item in items %}
-          <div id={{"menu-link-" ~ loop.index0}} class="col-1 text-center menu-hover"{{ item.attributes }}>
-            <div class="menu-link">
-              {{ link(item.title, item.url) }}
-              {% if loop.index0 in rich_menu_index %}
-                <i class="fa fa-caret-down"></i>
+          {% if item.url.routeName is not same as ("<nolink>") %}
+            <a href={{ item.url }} id={{"menu-link-" ~ loop.index0}} class="col-1 text-center menu-hover">
+            {{ item.title }}
+            </a>
+          {% else %}
+            <div id={{"menu-link-" ~ loop.index0}} class="col-1 text-center menu-hover" {{ item.attributes }}>
+              <div class="menu-link">
+                {{ link(item.title, item.url) }}
+                {% if loop.index0 in rich_menu_index %}
+                  <i class="fa fa-caret-down"></i>
+                {% endif %}
+              </div>
+              {% if item.below %}
+                <div class="text-light">
+                  {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+                </div>
               {% endif %}
             </div>
-            {% if item.below %}
-              <div class="text-light">
-                {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-              </div>
-            {% endif %}
-          </div>
+          {% endif %}
         {% endfor %}
       </div>
     {% endif %}

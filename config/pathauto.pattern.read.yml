@@ -1,0 +1,22 @@
+uuid: 06800d43-b2d6-4baa-b6a7-57583dfdc88f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: read
+label: read
+type: 'canonical_entities:node'
+pattern: 'read/[node:title]'
+selection_criteria:
+  b53d2214-313c-4b68-aa6d-049d735884d9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b53d2214-313c-4b68-aa6d-049d735884d9
+    context_mapping:
+      node: node
+    bundles:
+      manga_overview: manga_overview
+selection_logic: and
+weight: -5
+relationships: {  }

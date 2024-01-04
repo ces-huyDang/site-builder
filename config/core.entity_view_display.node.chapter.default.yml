@@ -7,7 +7,59 @@ dependencies:
     - field.field.node.chapter.field_manga
     - node.type.chapter
   module:
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Content
+          context_mapping: {  }
+        components:
+          3f926ff6-6cc7-40e5-97af-837c740f6168:
+            uuid: 3f926ff6-6cc7-40e5-97af-837c740f6168
+            region: content
+            configuration:
+              id: 'field_block:node:chapter:field_content'
+              label: Content
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7d034a75-20db-4918-a235-253725ade166:
+            uuid: 7d034a75-20db-4918-a235-253725ade166
+            region: content
+            configuration:
+              id: 'extra_field_block:node:chapter:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.chapter.default
 targetEntityType: node
 bundle: chapter

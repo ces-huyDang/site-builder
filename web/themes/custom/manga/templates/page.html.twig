@@ -1,5 +1,5 @@
-<main class="container-fluid pb-1">
-  <header class="bg-lol-dark row">
+<main class="container-fluid">
+  <header class="row bg-lol-dark bottom-line-orange">
     <aside class="col-2">{{ page.header_left }}</aside>
     <main class="col-8">{{ page.header }}</main>
     <aside class="col-2">{{ page.header_right }}</aside>
@@ -7,7 +7,7 @@
   <section class="row">
     {% if page.featured %}
       <div class="featured">
-        <div class="col-12 mb-24">
+        <div class="col-12">
           {{ page.featured }}
         </div>
       </div>
@@ -18,8 +18,8 @@
     <main class="col-8">{{ page.content }}</main>
     <aside class="col-2">{{ page.sidebar_second }}</aside>
   </section>
-  <footer class="row top-line-orange">
-      <div class="text-center p-5">
+  <footer class="row bg-lol-dark top-line-orange">
+      <div class="text-center p-4">
         {{ page.footer }}
       </div>
   </footer>

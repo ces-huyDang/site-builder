@@ -9,7 +9,7 @@ dependencies:
 id: manga_richcontentmenublock
 theme: manga
 region: header
-weight: -3
+weight: -5
 provider: null
 plugin: rich_content_menu_block
 settings:

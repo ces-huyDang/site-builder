@@ -1,0 +1,22 @@
+uuid: 9dad6603-c7e6-446c-993f-b4fa8b9189be
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: read_chapter
+label: 'Read Chapter'
+type: 'canonical_entities:node'
+pattern: 'read/[node:field_manga]-[node:title]'
+selection_criteria:
+  d570157b-2b73-4fea-9bbd-adef6c09700c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d570157b-2b73-4fea-9bbd-adef6c09700c
+    context_mapping:
+      node: node
+    bundles:
+      chapter: chapter
+selection_logic: and
+weight: -5
+relationships: {  }

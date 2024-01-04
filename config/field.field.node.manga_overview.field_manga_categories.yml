@@ -1,0 +1,29 @@
+uuid: 85b0696e-9f4d-450a-a08f-a13c6e896a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_manga_categories
+    - node.type.manga_overview
+    - taxonomy.vocabulary.categories
+id: node.manga_overview.field_manga_categories
+field_name: field_manga_categories
+entity_type: node
+bundle: manga_overview
+label: 'Manga Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

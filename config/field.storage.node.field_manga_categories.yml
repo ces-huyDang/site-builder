@@ -1,0 +1,20 @@
+uuid: 9bfb2298-c3d5-4eac-a9e0-934468e72284
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_manga_categories
+field_name: field_manga_categories
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

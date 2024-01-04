@@ -1,0 +1,23 @@
+uuid: 3804f9d0-63e4-41dc-922c-dc8ffd7c5278
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_read_chap_1
+    - node.type.manga_overview
+  module:
+    - link
+id: node.manga_overview.field_read_chap_1
+field_name: field_read_chap_1
+entity_type: node
+bundle: manga_overview
+label: 'Read Chap 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

@@ -1,0 +1,14 @@
+uuid: 10072cab-b3c5-4ff1-a96e-746510c3317d
+langcode: en
+status: true
+dependencies: {  }
+name: wide_1280
+label: 'Wide 1280'
+effects:
+  446d237f-46b2-4be0-b91a-76ed169e711e:
+    uuid: 446d237f-46b2-4be0-b91a-76ed169e711e
+    id: image_resize
+    weight: 1
+    data:
+      width: 1156
+      height: 1024

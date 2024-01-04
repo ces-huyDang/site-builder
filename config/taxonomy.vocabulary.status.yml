@@ -1,0 +1,8 @@
+uuid: 63f1d73b-5514-41f6-a22f-0fe3de8af3e9
+langcode: en
+status: true
+dependencies: {  }
+name: Status
+vid: status
+description: 'Status of manga'
+weight: 0

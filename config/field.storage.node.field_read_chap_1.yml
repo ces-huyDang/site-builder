@@ -1,0 +1,19 @@
+uuid: 0965a8a8-a20d-4eff-a621-9ef6368ec261
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_read_chap_1
+field_name: field_read_chap_1
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
