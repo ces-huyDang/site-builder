@@ -1,0 +1,23 @@
+uuid: da1f362f-2044-425c-b85e-64f01ec14836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subscribers
+    - node.type.manga_overview
+id: node.manga_overview.field_subscribers
+field_name: field_subscribers
+entity_type: node
+bundle: manga_overview
+label: Subscribers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

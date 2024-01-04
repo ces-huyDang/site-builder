@@ -1,0 +1,23 @@
+uuid: 2db8e6e5-05f4-4634-8c9d-9a84d12e6bd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_views
+    - node.type.manga_overview
+id: node.manga_overview.field_views
+field_name: field_views
+entity_type: node
+bundle: manga_overview
+label: Views
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

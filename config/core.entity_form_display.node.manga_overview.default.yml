@@ -5,11 +5,17 @@ dependencies:
   config:
     - field.field.node.manga_overview.field_author
     - field.field.node.manga_overview.field_cover_art
-    - field.field.node.manga_overview.field_latest_chap
+    - field.field.node.manga_overview.field_description
+    - field.field.node.manga_overview.field_last_updated
+    - field.field.node.manga_overview.field_manga_categories
+    - field.field.node.manga_overview.field_read_chap_1
+    - field.field.node.manga_overview.field_status
+    - field.field.node.manga_overview.field_subscribers
+    - field.field.node.manga_overview.field_views
     - node.type.manga_overview
   module:
+    - link
     - media_library
-    - paragraphs
     - path
     - text
 id: node.manga_overview.default
@@ -38,23 +44,53 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_latest_chap:
-    type: paragraphs
-    weight: 123
+  field_description:
+    type: text_textarea
+    weight: 126
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_last_updated:
+    type: datetime_timestamp
+    weight: 130
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_manga_categories:
+    type: options_buttons
+    weight: 124
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_read_chap_1:
+    type: link_default
+    weight: 131
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_status:
+    type: options_buttons
+    weight: 125
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_subscribers:
+    type: number
+    weight: 127
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_views:
+    type: number
+    weight: 128
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

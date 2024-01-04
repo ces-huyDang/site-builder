@@ -2,12 +2,19 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="30pt" height="30pt" viewBox="0 0 1200.000000 1200.000000"
- preserveAspectRatio="xMidYMid meet"
- >
+ width="35.000000pt" height="35.000000pt" viewBox="0 0 1200.000000 1200.000000"
+ preserveAspectRatio="xMidYMid meet">
+   <defs>
+    <linearGradient id="grad1" x1="0%" y1="40%" x2="40%" y2="0%">
+      <stop offset="0%" style="stop-color:#f18121;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3b98a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 
 <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)"
-fill="#f18121" stroke="none">
+fill="url('#grad1')" stroke="none">
+
+
 <path d="M5660 11490 c-1140 -79 -2208 -489 -3077 -1182 -193 -154 -463 -398
 -463 -419 0 -6 531 -541 663 -668 l36 -33 133 120 c320 292 665 530 1029 713
 907 454 1942 589 2940 384 793 -164 1524 -541 2136 -1104 358 -328 719 -799

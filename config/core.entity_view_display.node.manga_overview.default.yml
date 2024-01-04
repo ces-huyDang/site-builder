@@ -5,12 +5,230 @@ dependencies:
   config:
     - field.field.node.manga_overview.field_author
     - field.field.node.manga_overview.field_cover_art
-    - field.field.node.manga_overview.field_latest_chap
+    - field.field.node.manga_overview.field_description
+    - field.field.node.manga_overview.field_last_updated
+    - field.field.node.manga_overview.field_manga_categories
+    - field.field.node.manga_overview.field_read_chap_1
+    - field.field.node.manga_overview.field_status
+    - field.field.node.manga_overview.field_subscribers
+    - field.field.node.manga_overview.field_views
     - node.type.manga_overview
+    - views.view.chapter_list
   module:
-    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - link
     - text
     - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Information
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          1d664ae0-4b1d-4878-b077-cf8fbcd8de24:
+            uuid: 1d664ae0-4b1d-4878-b077-cf8fbcd8de24
+            region: first
+            configuration:
+              id: 'field_block:node:manga_overview:field_cover_art'
+              label: 'Cover Art'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b8a41288-526c-450a-90ca-a297e131b54f:
+            uuid: b8a41288-526c-450a-90ca-a297e131b54f
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8e0a1080-150f-43da-aa35-3e81fd4e47fb:
+            uuid: 8e0a1080-150f-43da-aa35-3e81fd4e47fb
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:field_manga_categories'
+              label: 'Manga Categories'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          d65144c5-b8b9-45f2-847e-442b142f6691:
+            uuid: d65144c5-b8b9-45f2-847e-442b142f6691
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:field_status'
+              label: Status
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          bab2f433-0dcd-433d-8275-574c8f8c6dc6:
+            uuid: bab2f433-0dcd-433d-8275-574c8f8c6dc6
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:field_author'
+              label: Author
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          afef04ec-3e71-4a97-b45c-763ba7d5e2ba:
+            uuid: afef04ec-3e71-4a97-b45c-763ba7d5e2ba
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:field_subscribers'
+              label: Subscribers
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          59d9a134-5a6b-4c65-aac3-e2b2793d4d19:
+            uuid: 59d9a134-5a6b-4c65-aac3-e2b2793d4d19
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:field_views'
+              label: Views
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          1914d98b-970e-4447-86bc-8296ed78e8f6:
+            uuid: 1914d98b-970e-4447-86bc-8296ed78e8f6
+            region: second
+            configuration:
+              id: 'field_block:node:manga_overview:field_read_chap_1'
+              label: 'Read Chap 1'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: true
+                  url_plain: true
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Description
+          context_mapping: {  }
+        components:
+          7d761c97-b6cd-4d5d-9dc3-9697b0800b8c:
+            uuid: 7d761c97-b6cd-4d5d-9dc3-9697b0800b8c
+            region: content
+            configuration:
+              id: 'field_block:node:manga_overview:field_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          3d1ee179-2bfa-4a8f-81ec-42f15fe5ad4d:
+            uuid: 3d1ee179-2bfa-4a8f-81ec-42f15fe5ad4d
+            region: content
+            configuration:
+              id: 'views_block:chapter_list-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.manga_overview.default
 targetEntityType: node
 bundle: manga_overview
@@ -21,29 +239,58 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   field_cover_art:
     type: entity_reference_entity_view
-    label: above
+    label: inline
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  field_latest_chap:
-    type: entity_reference_revisions_entity_view
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: first
+  field_manga_categories:
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
-      link: ''
+      link: true
     third_party_settings: {  }
-    weight: 103
-    region: content
+    weight: 4
+    region: first
+  field_read_chap_1:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: first
+  field_status:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: first
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
-hidden: {  }
+hidden:
+  field_last_updated: true
+  field_subscribers: true
+  field_views: true

@@ -13,7 +13,7 @@ mode: default
 content:
   field_chap_number:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -21,21 +21,12 @@ content:
     weight: 0
     region: content
   field_since:
-    type: timestamp
+    type: timestamp_ago
     label: above
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
     third_party_settings: {  }
     weight: 1
     region: content

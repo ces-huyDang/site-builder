@@ -6,7 +6,13 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.manga_overview.field_author
     - field.field.node.manga_overview.field_cover_art
-    - field.field.node.manga_overview.field_latest_chap
+    - field.field.node.manga_overview.field_description
+    - field.field.node.manga_overview.field_last_updated
+    - field.field.node.manga_overview.field_manga_categories
+    - field.field.node.manga_overview.field_read_chap_1
+    - field.field.node.manga_overview.field_status
+    - field.field.node.manga_overview.field_subscribers
+    - field.field.node.manga_overview.field_views
     - node.type.manga_overview
   module:
     - user
@@ -23,4 +29,10 @@ content:
 hidden:
   field_author: true
   field_cover_art: true
-  field_latest_chap: true
+  field_description: true
+  field_last_updated: true
+  field_manga_categories: true
+  field_read_chap_1: true
+  field_status: true
+  field_subscribers: true
+  field_views: true
