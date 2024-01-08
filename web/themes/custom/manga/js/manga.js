@@ -28,10 +28,11 @@
   $("#chapter-list").on("change", function () {
     const selectedValue = $(this).val();
     const newChapterNumber = selectedValue.charAt(selectedValue.length - 1);
-    location.href = currentPath.replace(
-      location.pathname.charAt(currentPath.length - 1),
-      newChapterNumber
-    );
+    const newPath = `${currentPath.substring(
+      0,
+      currentPath.length - 1
+    )}${newChapterNumber}`;
+    location.href = newPath;
   });
 
   $(document).ready(function () {
