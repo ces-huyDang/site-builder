@@ -1,0 +1,30 @@
+uuid: f41b0290-d375-434c-8201-14784b571b01
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.chapter_select_block
+  module:
+    - system
+    - views
+  theme:
+    - manga
+id: manga_views_block__chapter_select_block_chapter_select_1
+theme: manga
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:chapter_select_block-chapter_select_1'
+settings:
+  id: 'views_block:chapter_select_block-chapter_select_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/read/*'

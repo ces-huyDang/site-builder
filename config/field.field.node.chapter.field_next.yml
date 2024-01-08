@@ -1,0 +1,23 @@
+uuid: f2832d25-492e-43b5-8e0e-bc576515d218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_next
+    - node.type.chapter
+  module:
+    - link
+id: node.chapter.field_next
+field_name: field_next
+entity_type: node
+bundle: chapter
+label: Next
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

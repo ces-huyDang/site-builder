@@ -1,8 +1,12 @@
 :root {
-	--main-color: #f18121;
-	--main-hover-color: #f29c57;
-	--secondary-color: #000000;
-	--main-background: linear-gradient( 135deg, var(--main-color) 0%, var(--main-hover-color) 100% );
+  --main-color: #f18121;
+  --main-hover-color: #f29c57;
+  --secondary-color: #000000;
+  --main-background: linear-gradient(
+    135deg,
+    var(--main-color) 0%,
+    var(--main-hover-color) 100%
+  );
 }
 $color_1: #f9f9f9;
 $color_2: white;
@@ -14,195 +18,238 @@ $background-color_1: white;
 $background-color_2: var(--main-color);
 $background-color_3: #111111;
 .site-name {
-	font-size: 1.875rem;
-	color: $color_1;
-	font-weight: 449;
-	padding-left: 0.5625rem;
-	padding-top: 0.625rem;
+  font-size: 1.875rem;
+  color: $color_1;
+  font-weight: 449;
+  padding-left: 0.5625rem;
+  padding-top: 0.625rem;
 }
 .site-logo {
-	padding-top: 0.625rem;
+  padding-top: 0.625rem;
 }
 .site-account {
-	padding-top: 0.9375rem;
-	float: right;
+  padding-top: 0.9375rem;
+  float: right;
 }
 #block-manga-site-branding {
-	>a {
-		text-decoration: none;
-	}
+  > a {
+    text-decoration: none;
+  }
 }
 .header-searchform {
-	margin-left: 1.5625rem;
-	height: 50px;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	font-size: 0.9375rem;
-	border: var(--bs-border-width) solid var(--bs-border-color);
-	border-right: none;
-	&:focus-visible {
-		outline: none;
-	}
+  margin-left: 1.5625rem;
+  height: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 0.9375rem;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-right: none;
+  &:focus-visible {
+    outline: none;
+  }
 }
 #search-block-form {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: nowrap;
-	-ms-flex-wrap: nowrap;
-	flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 .search-btn {
-	height: 50px;
-	width: 50px;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
-	background-color: $background-color_1;
-	border: var(--bs-border-width) solid var(--bs-border-color);
-	border-left: none;
+  height: 50px;
+  width: 50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: $background-color_1;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-left: none;
 }
 .account-btn {
-	padding: 0.625rem;
-	font-size: small;
-	text-decoration: none;
+  padding: 0.625rem;
+  font-size: small;
+  text-decoration: none;
 }
 .account-section {
-	margin-left: auto;
-	right: 0;
+  margin-left: auto;
+  right: 0;
 }
 #account-btn-0 {
-	background: var(--main-background);
-	border: none;
-	color: $color_2;
-	border-top-left-radius: 7px;
-	&:hover {
-		background: -webkit-linear-gradient(315deg, var(--main-color) 25%, var(--main-hover-color) 45%, #71e0f1 100%);
-		background: -o-linear-gradient(315deg, var(--main-color) 25%, var(--main-hover-color) 45%, #71e0f1 100%);
-		background: linear-gradient(135deg, var(--main-color) 25%, var(--main-hover-color) 45%, #71e0f1 100%);
-	}
+  background: var(--main-background);
+  border: none;
+  color: $color_2;
+  border-top-left-radius: 7px;
+  &:hover {
+    background: -webkit-linear-gradient(
+      315deg,
+      var(--main-color) 25%,
+      var(--main-hover-color) 45%,
+      #71e0f1 100%
+    );
+    background: -o-linear-gradient(
+      315deg,
+      var(--main-color) 25%,
+      var(--main-hover-color) 45%,
+      #71e0f1 100%
+    );
+    background: linear-gradient(
+      135deg,
+      var(--main-color) 25%,
+      var(--main-hover-color) 45%,
+      #71e0f1 100%
+    );
+  }
 }
 #account-btn-1 {
-	background-color: $background-color_1;
-	color: $color_3;
-	border: var(--bs-border-width) solid var(--bs-border-color);
-	border-bottom-right-radius: 7px;
+  background-color: $background-color_1;
+  color: $color_3;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-bottom-right-radius: 7px;
 }
 .bg-orange {
-	background-color: $background-color_2;
+  background-color: $background-color_2;
 }
 .menu-hover {
-	height: 70px;
-	padding-top: 1.25rem;
-	color: $color_2;
-	text-decoration: none;
-	&:hover {
-		background: var(--main-background);
-	}
+  height: 70px;
+  padding-top: 1.25rem;
+  color: $color_2;
+  text-decoration: none;
+  &:hover {
+    background: var(--main-background);
+  }
 }
 .top-line-orange {
-	border-top: var(--main-color) 2px solid;
+  border-top: var(--main-color) 2px solid;
 }
 .bottom-line-orange {
-	border-bottom: var(--main-color) 2px solid;
+  border-bottom: var(--main-color) 2px solid;
 }
 .menu-link {
-	>span {
-		color: $color_2;
-	}
+  > span {
+    color: $color_2;
+  }
 }
 .fa-caret-down {
-	color: $color_2;
+  color: $color_2;
 }
 .rich-content-block {
-	left: 50%;
-	-webkit-transform: translate(-50%, 0);
-	-o-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+	z-index: 3;
 }
 .ctgy-menu {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .ctgy-menu-item {
-	width: 12.5%;
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 auto;
-	-ms-flex: 0 0 auto;
-	flex: 0 0 auto;
-	text-align: center;
-	padding-bottom: 0.625rem;
-	padding-top: 0.625rem;
+  width: 12.5%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  text-align: center;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
 }
 .ctgy-link {
-	text-decoration: none;
-	color: $color_4;
-	>a {
-		text-decoration: none;
-		color: $color_4;
-		&:hover {
-			color: $color_5;
-		}
-	}
-	&:hover {
-		color: $color_5;
-	}
+  text-decoration: none;
+  color: $color_4;
+  > a {
+    text-decoration: none;
+    color: $color_4;
+    &:hover {
+      color: $color_5;
+    }
+  }
+  &:hover {
+    color: $color_5;
+  }
 }
 .bg-lol-dark {
-	background-color: $background-color_3;
+  background-color: $background-color_3;
 }
 .manga-ctgy {
-	text-decoration: none;
-	color: $color_5;
-	padding: 0.3125rem;
-	font-size: small;
-	border: 1px solid var(--main-color);
-	border-radius: 5px;
-	&:hover {
-		background: var(--main-background);
-		color: $color_2;
-	}
+  text-decoration: none;
+  color: $color_5;
+  padding: 0.3125rem;
+  font-size: small;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  &:hover {
+    background: var(--main-background);
+    color: $color_2;
+  }
 }
 .main-font {
-	font-family: $font-family_1;
-	>a {
-		font-family: $font-family_1;
-	}
+  font-family: $font-family_1;
+  > a {
+    font-family: $font-family_1;
+  }
 }
 .text-orange {
-	color: $color_5;
+  color: $color_5;
 }
 .bottom-hr {
-	border-bottom: 1px solid #c7c8c9;
+  border-bottom: 1px solid #c7c8c9;
 }
 .hp-img {
-	>a {
-		>img {
-			border-radius: 7px;
-			border: var(--main-color) 1px solid;
-		}
-	}
+  > a {
+    > img {
+      border-radius: 7px;
+      border: var(--main-color) 1px solid;
+    }
+  }
 }
 .hp-title {
-	>a {
-		text-decoration: none;
-		color: $color_3;
-		&:hover {
-			color: $color_5;
-		}
-	}
+  > a {
+    text-decoration: none;
+    color: $color_3;
+    &:hover {
+      color: $color_5;
+    }
+  }
 }
-.overview-btn {
-	text-decoration: none;
-	color: $color_1;
-	padding: 0.9375rem;
-	font-size: small;
+.chapter-btn {
+  text-decoration: none;
+  color: $color_1;
+  padding: 0.9375rem;
+  font-size: small;
+  width: 100px;
+  &.previous-btn {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  &.next-btn {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+}
+.manga-status {
+  color: $background-color_3;
+  &:hover {
+    color: var(--main-color);
+  }
+}
+#chapter-list {
+  width: 75%;
+  text-align: center;
+  position: absolute;
+	left: 12.5%;
+	z-index: 1;
+	height: 50px;
 }

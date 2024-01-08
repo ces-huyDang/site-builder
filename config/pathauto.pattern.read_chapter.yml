@@ -7,12 +7,12 @@ dependencies:
 id: read_chapter
 label: 'Read Chapter'
 type: 'canonical_entities:node'
-pattern: 'read/[node:field_manga]-[node:title]'
+pattern: 'read/[node:field_manga:entity:nid]/[node:field_manga]-[node:title]'
 selection_criteria:
-  d570157b-2b73-4fea-9bbd-adef6c09700c:
+  6becb8e9-976f-4768-b00f-cb4a995e6833:
     id: 'entity_bundle:node'
     negate: false
-    uuid: d570157b-2b73-4fea-9bbd-adef6c09700c
+    uuid: 6becb8e9-976f-4768-b00f-cb4a995e6833
     context_mapping:
       node: node
     bundles:

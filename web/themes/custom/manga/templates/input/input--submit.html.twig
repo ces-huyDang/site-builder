@@ -13,10 +13,10 @@
  */
 #}
 
-{% if path('<current>') starts with '/home-page' or path('<current>') starts with '/read' or path('<current>') starts with '/search' %}
+{% if path('<current>') starts with '/user' or path('<current>') starts with '/admin' %}
+  <input class="bg-orange rounded border-0 p-2 text-white" {{attributes}}/>{{ children }}
+{% else %}
   <button class="search-btn" {{ attributes.removeAttribute('value') }}>
     <i class="fa fa-search text-orange"></i>
   </buton>
-{% else %}
-  <input class="bg-orange rounded border-0 p-2 text-white" {{attributes}}/>{{ children }}
 {% endif %}
