@@ -68,28 +68,35 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
+<article{{attributes}}>
 
   {{ title_prefix }}
   {% if label and not page %}
-    <h2{{ title_attributes }}>
+    <h2{{title_attributes}}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
   {% endif %}
   {{ title_suffix }}
-
-  {# {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
+  <div{{content_attributes}}>
+    <main>
+      <div class="row">
+        <div class="col-2">
+          {{ content['field_cover_art']|without('#title') }}
+        </div>
+        <div class="col-10">
+          <div class="main-font">{{ label }}</div>
+          <div class="pt-1">{{ content['field_author'] }}</div>
+          <div class="pt-1">{{ content['field_status'] }}</div>
+          <div class="pt-1">{{ content['field_subscribers'] }}</div>
+          <div class="pt-1">{{ content['field_views'] }}</div>
+          <div class="pt-1">{{ content['field_manga_categories']|without('#title') }}</div>
+          <div class="pt-4">
+            <a href={{ content['field_read_chap_1'][0]['#title'] }} class="chapter-btn bg-dark bg-gradient">Read Chap 1</a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div>{{ content['field_description'] }}</div>
+        </div>
       </div>
-    </footer>
-  {% endif %} #}
-
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
-
-</article>
+      <main></div>
+    </article>

@@ -1,6 +1,6 @@
 (function ($) {
+  const currentPath = location.pathname;
   function showMenuPopup(id) {
-    console.log(id);
     const idNumber = id.charAt(id.length - 1);
     $(id).hover(
       function () {
@@ -19,8 +19,24 @@
     );
   }
 
+  function showCurrentChapter() {
+    const chapterNumber = currentPath.charAt(currentPath.length - 1);
+    $("#chapter-list").val(`chapter-${chapterNumber}`);
+    $("#chapter-0").hide();
+  }
+
+  $("#chapter-list").on("change", function () {
+    const selectedValue = $(this).val();
+    const newChapterNumber = selectedValue.charAt(selectedValue.length - 1);
+    location.href = currentPath.replace(
+      location.pathname.charAt(currentPath.length - 1),
+      newChapterNumber
+    );
+  });
+
   $(document).ready(function () {
     showMenuPopup("#menu-link-1");
     showMenuPopup("#menu-link-2");
+    showCurrentChapter();
   });
 })(jQuery);

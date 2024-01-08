@@ -7,12 +7,12 @@ dependencies:
 id: read
 label: read
 type: 'canonical_entities:node'
-pattern: 'read/[node:title]'
+pattern: 'overview/[node:title]'
 selection_criteria:
-  b53d2214-313c-4b68-aa6d-049d735884d9:
+  711b190f-c2f0-4c8b-8634-7fedd1c9058d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: b53d2214-313c-4b68-aa6d-049d735884d9
+    uuid: 711b190f-c2f0-4c8b-8634-7fedd1c9058d
     context_mapping:
       node: node
     bundles:

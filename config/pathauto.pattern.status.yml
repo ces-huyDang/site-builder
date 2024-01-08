@@ -1,0 +1,22 @@
+uuid: 1684dcce-32b0-4f91-b3d3-d3345c9fdf70
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: status
+label: Status
+type: 'canonical_entities:taxonomy_term'
+pattern: 'status/[term:name]'
+selection_criteria:
+  b2720c3a-d0f2-4dc0-ac77-f3200a16cda4:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: b2720c3a-d0f2-4dc0-ac77-f3200a16cda4
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      status: status
+selection_logic: and
+weight: -5
+relationships: {  }

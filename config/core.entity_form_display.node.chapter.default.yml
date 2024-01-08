@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.node.chapter.field_content
     - field.field.node.chapter.field_manga
+    - field.field.node.chapter.field_next
+    - field.field.node.chapter.field_previous
     - node.type.chapter
   module:
+    - link
     - media_library
     - path
 id: node.chapter.default
@@ -32,6 +35,22 @@ content:
     weight: 122
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_next:
+    type: link_default
+    weight: 124
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_previous:
+    type: link_default
+    weight: 123
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   path:
     type: path

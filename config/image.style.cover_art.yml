@@ -1,0 +1,15 @@
+uuid: e45af626-b297-43e2-84ac-ed381c6ada47
+langcode: en
+status: true
+dependencies: {  }
+name: cover_art
+label: 'Cover Art'
+effects:
+  33d184fb-a0c9-4498-ace8-f81a7ca6f6fd:
+    uuid: 33d184fb-a0c9-4498-ace8-f81a7ca6f6fd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 192
+      height: 250
+      anchor: center-center
