@@ -1,0 +1,16 @@
+{{ form.form_id }}
+{{ form.form_token }}
+{{ form.form_build_id }}
+<main>
+  <a href={{ form['form_title'] ? "/list/manga" : "/home-page" }} class="manga-btn">
+    Back
+  </a>
+  <h3 class="text-center">{{ form['form_title'] ? form['form_title'] : 'Add new Chapter' }}</h3>
+  <div class="row pt-2 gap-3">
+    {{ form.title }}
+    {{ form.field_manga }}
+    {{ form.field_content }}
+    {{ form.actions }}
+  </div>
+</main>
+

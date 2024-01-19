@@ -1,0 +1,43 @@
+main.manga_form:
+  path: '/add/manga'
+  defaults:
+    _title: 'Manga Overview Form'
+    _form: '\Drupal\main\Form\MainMangaForm'
+  requirements:
+    _permission: 'Site administer'
+main.manga_list:
+  path: '/list/manga'
+  defaults:
+    _title: 'Manga List'
+    _controller: '\Drupal\main\Controller\MainController::mangaList'
+  requirements:
+    _permission: 'Site administer'
+main.manga_edit_form:
+  path: '/edit/manga/{nid}'
+  defaults:
+    _title: 'Manga Overview Edit Form'
+    _form: '\Drupal\main\Form\MainMangaForm'
+  requirements:
+    _permission: 'Site administer'
+
+main.chapter_form:
+  path: '/add/chapter'
+  defaults:
+    _title: 'Chapter Form'
+    _form: '\Drupal\main\Form\MainChapterForm'
+  requirements:
+    _permission: 'Site administer'
+# main.chapter_list:
+#   path: '/list/chapter/{mid}'
+#   defaults:
+#     _title: 'Chapter List'
+#     _controller: '\Drupal\main\Controller\MainController::chapterList'
+#   requirements:
+#     _permission: 'Site administer'
+main.chapter_edit_form:
+  path: '/edit/chapter/{nid}'
+  defaults:
+    _title: 'Chapter Edit Form'
+    _form: '\Drupal\main\Form\MainChapterForm'
+  requirements:
+    _permission: 'Site administer'

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.manga_overview.field_cover_art
     - field.field.node.manga_overview.field_description
     - field.field.node.manga_overview.field_last_updated
+    - field.field.node.manga_overview.field_latest_chapter
     - field.field.node.manga_overview.field_manga_categories
     - field.field.node.manga_overview.field_read_chap_1
     - field.field.node.manga_overview.field_status
@@ -57,6 +58,14 @@ content:
     weight: 130
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_latest_chapter:
+    type: link_default
+    weight: 132
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_manga_categories:
     type: options_buttons

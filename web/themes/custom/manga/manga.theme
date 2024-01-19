@@ -10,3 +10,12 @@ declare(strict_types = 1);
  * @file
  * Functions to support theming in the Manga theme.
 */
+
+/**
+ * A function that hooks into the page attachments and modifies them.
+ */
+function hook_page_attachments(array &$attachments) {
+
+  // Unconditionally attach an asset to the page.
+  $attachments['#attached']['library'][] = 'main/chapter';
+}

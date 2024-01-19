@@ -1,2 +1,3 @@
-administer main configuration:
+'Site administer':
   title: 'Administer main configuration'
+  description: 'Admin manga management'

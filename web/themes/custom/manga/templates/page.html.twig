@@ -6,21 +6,21 @@
   </header>
   <section class="row">
     {% if page.featured %}
-      <div class="featured">
-        <div class="col-12">
-          {{ page.featured }}
-        </div>
+    <div class="featured">
+      <div class="col-12">
+        {{ page.featured }}
       </div>
+    </div>
     {% endif %}
   </section>
-  <section class="row pt-4 pb-5">
-    <aside class="col-2">{{ page.sidebar_first }}</aside>
-    <main class="col-8">{{ page.content }}</main>
-    <aside class="col-2">{{ page.sidebar_second }}</aside>
+  <section class="row">
+    <aside class="col-2 pt-5 pb-5">{{ page.sidebar_first }}</aside>
+    <main class="col-8 pt-5 pb-5 shadow">{{ page.content }}</main>
+    <aside class="col-2 pt-5 pb-5">{{ page.sidebar_second }}</aside>
   </section>
   <footer class="row bg-lol-dark top-line-orange">
-      <div class="text-center p-4">
-        {{ page.footer }}
-      </div>
+    <div class="text-center p-4">
+      {{ page.footer }}
+    </div>
   </footer>
 </main>

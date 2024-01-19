@@ -68,8 +68,8 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('main/chapter') }}
 <article{{attributes}}>
-
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{title_attributes}}>
@@ -77,7 +77,6 @@
     </h2>
   {% endif %}
   {{ title_suffix }}
-
   {% if display_submitted %}
     <footer>
       {{ author_picture }}
@@ -89,17 +88,17 @@
       </div>
     </footer>
   {% endif %}
-
   <div class="text-center" {{ content_attributes }}>
     <div class="d-flex justify-content-between">
-      <a href={{ content['field_previous'][0]['#title'] }} class="chapter-btn previous-btn bg-dark bg-gradient">
+      <a id="prv-btn" href="/" class="chapter-btn previous-btn bg-dark bg-gradient">
         <i class="fa-solid fa-arrow-left"></i>
-        {{ content['field_previous']['#title'] }}</a>
-      <a href={{ content['field_next'][0]['#title'] }} class="chapter-btn next-btn bg-dark bg-gradient">{{ content['field_next']['#title'] }}
+        Previous</a>
+      <a id="nxt-btn" href="/" class="chapter-btn next-btn bg-dark bg-gradient">Next
         <i class="fa-solid fa-arrow-right"></i>
       </a>
     </div>
     <div class="pt-5">
       {{ content['field_content']|without('#title') }}</div>
+      {{ content['field_comments'] }}
   </div>
 </article>

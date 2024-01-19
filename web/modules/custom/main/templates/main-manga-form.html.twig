@@ -1,0 +1,52 @@
+{{ form.form_id }}
+{{ form.form_token }}
+{{ form.form_build_id }}
+
+<main>
+    <a href={{ form['form_title'] ? "/list/manga" : "/home-page" }} class="manga-btn">
+      Back
+    </a>
+    <h3 class="text-center">{{ form['form_title'] ? form['form_title'] : 'Add new Manga' }}</h3>
+  <div class="row pt-2 gap-3">
+    <div class="row">
+      <div class="col-6">
+        {{ form.title }}</div>
+      <div class="col-6">
+        {{ form.author }}
+      </div>
+    </div>
+    {{ form.description }}
+    <div>
+      {{ form.cover_art }}
+    </div>
+    <div>
+      <legend>
+        <span class="fieldset-legend fieldset__label js-form-required form-required">
+          {{ form.categories['#title'] }}
+        </span>
+      </legend>
+      <div class="ctgy-menu">
+        {% for key in form.categories['#options']|keys %}
+          <div class="ctgy-menu-item form">
+            {{ form.categories[key] }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="">
+      <legend>
+        <span class="fieldset-legend fieldset__label js-form-required form-required">
+          {{ form.status['#title'] }}
+        </span>
+      </legend>
+      <div class="d-flex gap-3">
+        {% for key in form.status['#options']|keys %}
+          {{ form.status[key] }}
+        {% endfor %}
+      </div>
+    </div>
+    <div>
+      {{ form.actions }}
+    </div>
+  </div>
+</main>

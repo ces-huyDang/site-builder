@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.manga_overview.field_cover_art
     - field.field.node.manga_overview.field_description
     - field.field.node.manga_overview.field_last_updated
+    - field.field.node.manga_overview.field_latest_chapter
     - field.field.node.manga_overview.field_manga_categories
     - field.field.node.manga_overview.field_read_chap_1
     - field.field.node.manga_overview.field_status
@@ -68,6 +69,18 @@ content:
         refresh: 60
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_latest_chapter:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
     region: content
   field_manga_categories:
     type: entity_reference_label

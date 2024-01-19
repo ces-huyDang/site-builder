@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.chapter_list
   module:
+    - node
     - system
     - views
   theme:
@@ -27,4 +28,11 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/overview/*'
+    pages: '/manga/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      manga_overview: manga_overview

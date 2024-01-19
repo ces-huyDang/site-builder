@@ -1,0 +1,23 @@
+uuid: 0129c0a4-c420-4748-be3d-337f05135816
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latest_chapter
+    - node.type.manga_overview
+  module:
+    - link
+id: node.manga_overview.field_latest_chapter
+field_name: field_latest_chapter
+entity_type: node
+bundle: manga_overview
+label: 'Latest Chapter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link
