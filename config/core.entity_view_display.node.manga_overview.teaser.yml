@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.manga_overview.field_cover_art
     - field.field.node.manga_overview.field_description
     - field.field.node.manga_overview.field_last_updated
+    - field.field.node.manga_overview.field_latest_chapter
     - field.field.node.manga_overview.field_manga_categories
     - field.field.node.manga_overview.field_read_chap_1
     - field.field.node.manga_overview.field_status
@@ -31,6 +32,7 @@ hidden:
   field_cover_art: true
   field_description: true
   field_last_updated: true
+  field_latest_chapter: true
   field_manga_categories: true
   field_read_chap_1: true
   field_status: true

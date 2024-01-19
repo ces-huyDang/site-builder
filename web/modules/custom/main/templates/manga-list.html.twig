@@ -1,0 +1,26 @@
+<table aria-describedby="table-description" class="table table-hover">
+  <h3 class="text-center bottom-hr padding-1">Manga List</h3>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for manga in data.mangaList %}
+      <tr>
+        <th scope="row">{{ loop.index }}</th>
+        <td>{{ manga.title.value }}</td>
+        <td>{{ manga.field_author.value }}</td>
+        <td>
+          <a class="manga-btn" href={{ "/edit/manga/" ~ manga.nid.value }}>Edit</a>
+          <a class="manga-btn"><i class="fa-solid fa-caret-down"></i></a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<!-- Description element -->
+<div id="table-description" class="sr-only">This table displays a list of manga titles, along with their authors and available actions.</div>

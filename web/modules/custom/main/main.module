@@ -16,5 +16,17 @@ function main_theme() {
         'data' => [],
       ],
     ],
+    'main_manga_form' => [
+      'render element' => 'form',
+    ],
+    'main_chapter_form' => [
+      'render element' => 'form',
+    ],
+    'manga_list' => [
+      'template' => 'manga-list',
+      'variables' => [
+        'data' => [],
+      ],
+    ],
   ];
 }

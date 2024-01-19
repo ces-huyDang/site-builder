@@ -5,14 +5,14 @@ dependencies:
   module:
     - node
 id: read
-label: read
+label: Overview
 type: 'canonical_entities:node'
-pattern: 'overview/[node:title]'
+pattern: '/manga/[node:nid]/[node:title]'
 selection_criteria:
-  711b190f-c2f0-4c8b-8634-7fedd1c9058d:
+  71ae8b85-2432-4666-ad19-e61b54447008:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 711b190f-c2f0-4c8b-8634-7fedd1c9058d
+    uuid: 71ae8b85-2432-4666-ad19-e61b54447008
     context_mapping:
       node: node
     bundles:

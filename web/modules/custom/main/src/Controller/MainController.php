@@ -45,4 +45,19 @@ class MainController extends ControllerBase {
       );
   }
 
+  /**
+   * Retrieves a list of manga.
+   *
+   * @return array An array of manga objects.
+   */
+  public function mangaList() {
+    $mangaList = $this->mainService->getMangaList();
+    return [
+      '#theme' => 'manga_list',
+      '#data' => [
+        'mangaList' => $mangaList,
+      ],
+    ];
+  }
+
 }

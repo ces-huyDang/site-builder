@@ -6,8 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.chapter.field_content
     - field.field.node.chapter.field_manga
-    - field.field.node.chapter.field_next
-    - field.field.node.chapter.field_previous
     - node.type.chapter
   module:
     - user
@@ -24,5 +22,3 @@ content:
 hidden:
   field_content: true
   field_manga: true
-  field_next: true
-  field_previous: true

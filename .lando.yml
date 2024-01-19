@@ -20,4 +20,7 @@ tooling:
     cmd: "php /app/vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml"
   phpcbf:
     service: appserver
-    cmd: "php /app/vendor/bin/phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml"    
+    cmd: "php /app/vendor/bin/phpcbf --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml"
+proxy:
+  phpmyadmin:
+    - db-blog.lndo.site

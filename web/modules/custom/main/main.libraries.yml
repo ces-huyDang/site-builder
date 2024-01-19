@@ -1,10 +1,7 @@
 # Custom library for general purposes.
-example_1:
+chapter:
   js:
-    js/example-1.js: {}
-  css:
-    component:
-      css/example-1.css: {}
+    js/chapter.js: {}
   dependencies:
     - core/drupalSettings
     - core/jquery

@@ -3,3 +3,11 @@ services:
     class: Drupal\main\Services\MainService
     autowire: true
     arguments: ['@entity_type.manager']
+  manga.service:
+    class: Drupal\main\Form\MainMangaForm
+    autowire: true
+    arguments: ['@main.service', '@entity_type.manager']
+  chapter.service:
+    class: Drupal\main\Form\MainChapterForm
+    autowire: true
+    arguments: ['@main.service', '@entity_type.manager']   

@@ -69,7 +69,6 @@
  */
 #}
 <article{{attributes}}>
-
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{title_attributes}}>
@@ -85,18 +84,21 @@
         </div>
         <div class="col-10">
           <div class="main-font">{{ label }}</div>
-          <div class="pt-1">{{ content['field_author'] }}</div>
+          <div class="pt-1">{{ content['field_author'] ? content['field_author'] : 'Updating' }}</div>
           <div class="pt-1">{{ content['field_status'] }}</div>
           <div class="pt-1">{{ content['field_subscribers'] }}</div>
           <div class="pt-1">{{ content['field_views'] }}</div>
           <div class="pt-1">{{ content['field_manga_categories']|without('#title') }}</div>
           <div class="pt-4">
-            <a href={{ content['field_read_chap_1'][0]['#title'] }} class="chapter-btn bg-dark bg-gradient">Read Chap 1</a>
+            {% if content['field_read_chap_1'][0]['#title'] %}
+              <a href={{ content['field_read_chap_1'][0]['#title'] }} class="chapter-btn bg-dark bg-gradient">Read Chap 1</a>
+            {% endif %}
           </div>
         </div>
         <div class="col-12">
           <div>{{ content['field_description'] }}</div>
         </div>
       </div>
-      <main></div>
-    </article>
+   <main>
+  </div>
+</article>

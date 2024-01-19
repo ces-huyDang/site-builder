@@ -5,13 +5,10 @@ dependencies:
   config:
     - field.field.node.chapter.field_content
     - field.field.node.chapter.field_manga
-    - field.field.node.chapter.field_next
-    - field.field.node.chapter.field_previous
     - image.style.wide
     - node.type.chapter
   module:
     - layout_builder
-    - link
     - media
     - user
 third_party_settings:
@@ -41,30 +38,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 102
-    region: content
-  field_next:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  field_previous:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 103
     region: content
   links:
     settings: {  }
